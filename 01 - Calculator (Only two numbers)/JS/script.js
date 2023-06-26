@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     const numOne = document.getElementById('num1')
     const numTwo = document.getElementById('num2')
+    const inputs = [numOne, numTwo]
     const operatorCheck = document.getElementsByName('operator')
     const calculateButton = document.getElementById('calculateButton')
     const resultDialog = document.getElementById('resultDialog')
@@ -48,4 +49,10 @@ window.addEventListener('DOMContentLoaded', function () {
         })
         calculateButton.disabled = true
     }) // close pop-up and reset app
+
+    inputs.forEach(function (clickInputs) {
+        clickInputs.addEventListener('click', function () {
+            document.getElementById('empty').value = ''
+        })
+    }) // warning disabled
 })
