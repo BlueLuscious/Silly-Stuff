@@ -1,0 +1,103 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+}
+
+.table1 {
+    position: absolute;
+    bottom: 220px;
+    left: 575px;
+} /* table 1 */
+
+.table2 {
+    position: absolute;
+    bottom: 217px;
+    left: 1100px;
+} /* table 2 */
+
+button {
+    margin: 0px;
+    padding: 15px;
+    width: 350px;
+    position: absolute;
+    bottom: 100px;
+    left: 775px;
+    font-size: 30px;
+} /* send form button */
+
+label {
+    position: relative;
+    right: 20px;
+    font-size: 30px;
+}
+
+span {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#css {
+    margin-left: 25px;
+}
+
+#python {
+    margin-left: 63px;
+}
+
+#sqlite {
+    margin-left: 38px;
+}
+
+input {
+    font-size: 20px;
+}
+
+input[type='text'], input[type='number'], input[type='date'] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#birthday {
+    width: 243px;
+}
+
+input[type='radio'] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#female {
+    margin-left: 40px;
+}
+
+input[type='checkbox'] {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    height: 15px;
+    border: 0;
+    font-size: 25px;
+    color: rgb(212, 14, 14);
+} /* warning empty values */
+
+#invalidId {
+    margin-left: -45px;
+}
+
+#invalidRadio {
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+#invalidCheckBox {
+    margin-left: -100px;
+}
