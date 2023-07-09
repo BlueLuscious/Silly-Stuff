@@ -1,0 +1,35 @@
+h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(70, 70, 70);
+}
+
+div {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1060px;
+}
+
+button {
+    margin: 50px;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.generatorButton {
+    position: relative;
+    bottom: 12px;
+}
