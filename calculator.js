@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', function () {
     const calculateButton = document.getElementById('calculateButton')
     const resultDialog = document.getElementById('resultDialog')
     const closeDialogButton = document.getElementById('closeDialogButton')
+    const returnToIndex = document.getElementById('returnToIndex')
+    const popUpText = document.getElementById('returnIndexPopUp')
 
     operatorCheck.forEach(function (check) {
         check.addEventListener('click', function () {
@@ -55,4 +57,21 @@ window.addEventListener('DOMContentLoaded', function () {
             document.getElementById('empty').value = ''
         })
     }) // warning disabled
+
+
+    returnToIndex.addEventListener('click', function () {
+        window.location.href = 'index.html'
+    }) // return index-button redirects to index.html
+
+    returnToIndex.addEventListener('mouseover', function () {
+        popUpText.style.visibility = 'visible'
+        popUpText.style.opacity = 1
+    }) // show return-index popup by mouseover
+
+    returnToIndex.addEventListener('mouseout', function () {
+        popUpText.style.visibility = 'hidden'
+        popUpText.style.opacity = 0
+    }) // hide return-index popup by mouseout
+
+
 })
