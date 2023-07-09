@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 2</title>
+    <title>Formulary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="formulary.css" type="text/css">
     <script src="formulary.js"></script>
 </head>
 <body>
     <h1>Formulary</h1>
+    <div class="return-index-button">
+        <button type="button" id="returnToIndex"><div id="arrowLeft" class="bi bi-arrow-left-square-fill"></div></button>
+        <div class="return-index-pop-up-text" id="returnIndexPopUp">Return to Index</div>
+    </div>
     <form action="formularyDisplay.html" method="get" enctype="multipart/form-data" id="dataForm">
         <table class="table1">
             <tr>
                 <td>
                     <label for="firstName">First Name:</label><br>
                     <input type="text" name="firstName" id="firstName" placeholder="John"><br>
-                    <div id="invalidFirstName" readonly>
+                    <div id="invalidFirstName" class="warnings">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="lastName">Last Name:</label><br>
                     <input type="text" name="lastName" id="lastName" placeholder="Doe"><br>
-                    <div id="invalidLastName" readonly>
+                    <div id="invalidLastName" class="warnings"></div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="inputId">ID:</label><br>
                     <input type="number" name="inputId" id="inputId" placeholder="00000000"><br>
-                    <div id="invalidId" readonly>
+                    <div id="invalidId" class="warnings"></div>
                 </td>
             </tr>
             <tr>
@@ -37,7 +43,7 @@
                     <label for="birthday">Birthday:</label><br>
                     <input type="date" name="birthday" id="birthday"><br>
                     <input type="hidden" name="age" id="age">
-                    <div id="invalidBirthday" readonly>
+                    <div id="invalidBirthday" class="warnings"></div>
                 </td>
             </tr>
         </table>
@@ -51,7 +57,7 @@
             </tr>
             <tr>
                 <td>
-                    <div id="invalidRadio" readonly>
+                    <div id="invalidRadio" class="warnings"></div>
                 </td>
             </tr>
             <tr>
@@ -69,7 +75,7 @@
             </tr>
             <tr>
                 <td>
-                    <div id="invalidCheckBox" readonly>
+                    <div id="invalidCheckBox" class="warnings"></div>
                 </td>
             </tr>
         </table>

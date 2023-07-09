@@ -1,4 +1,4 @@
-// index.html
+// formulary.html
 window.addEventListener('DOMContentLoaded', function () {
 
     const firstName = document.getElementById('firstName')
@@ -11,6 +11,9 @@ window.addEventListener('DOMContentLoaded', function () {
     const inputs = [firstName, lastName, inputId, birthday]
     const sendForm = document.getElementById('sendForm')
     const dataForm = document.getElementById('dataForm')
+
+    const returnToIndex = document.getElementById('returnToIndex')
+    const popUpText = document.getElementById('returnIndexPopUp')
 
     const invalidFirstName = document.getElementById('invalidFirstName')
     const invalidLastName = document.getElementById('invalidLastName')
@@ -123,9 +126,23 @@ window.addEventListener('DOMContentLoaded', function () {
             invalidCheckBox.innerHTML = ''
         })
     }) // warning empty checkbox blank
+
+    returnToIndex.addEventListener('click', function () {
+        window.location.href = 'index.html'
+    }) // return index-button redirects to index.html
+
+    returnToIndex.addEventListener('mouseover', function () {
+        popUpText.style.visibility = 'visible'
+        popUpText.style.opacity = 1
+    }) // show return-index popup by mouseover
+
+    returnToIndex.addEventListener('mouseout', function () {
+        popUpText.style.visibility = 'hidden'
+        popUpText.style.opacity = 0
+    }) // hide return-index popup by mouseout
 })
 
-// form.html
+// formularyDisplay.html
 window.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search)
 

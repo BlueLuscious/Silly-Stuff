@@ -18,7 +18,7 @@ h1 {
     left: 1100px;
 } /* table 2 */
 
-button {
+#sendForm {
     margin: 0px;
     padding: 15px;
     width: 350px;
@@ -80,7 +80,7 @@ input[type='checkbox'] {
     margin-bottom: 20px;
 }
 
-div {
+.warnings {
     margin-top: 5px;
     margin-bottom: 35px;
     height: 15px;
@@ -101,3 +101,29 @@ div {
 #invalidCheckBox {
     margin-left: -100px;
 }
+
+.return-index-button button {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.return-index-button .return-index-pop-up-text {
+    margin: 0px;
+    padding: 10px;
+    width: 120px;
+    position: absolute;
+    top: 13%;
+    left: 12.5%;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+} /* popup return index */
