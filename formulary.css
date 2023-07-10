@@ -26,6 +26,7 @@ h1 {
     bottom: 100px;
     left: 775px;
     font-size: 30px;
+    cursor: pointer;
 } /* send form button */
 
 label {
