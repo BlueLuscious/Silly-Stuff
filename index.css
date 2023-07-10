@@ -27,6 +27,7 @@ button {
     height: 200px;
     border-radius: 15px;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .generatorButton {
