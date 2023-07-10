@@ -10,6 +10,9 @@ window.addEventListener('DOMContentLoaded', function () {
     const displayEmptyInputs = document.getElementById('emptyInputs')
     const displayResult = document.getElementById('displayResult')
 
+    const returnToIndex = document.getElementById('returnToIndex')
+    const popUpText = document.getElementById('returnIndexPopUp')
+
     calculateButton.addEventListener('click', function () {
         generateCount()
     })  // click, run generateCount function
@@ -66,5 +69,19 @@ window.addEventListener('DOMContentLoaded', function () {
             }
             displayResult.innerHTML = numCount.join(', ')
         }
-    }
-}) // validation and result
+    } // validation and result
+
+    returnToIndex.addEventListener('click', function () {
+        window.location.href = 'index.html'
+    }) // return index-button redirects to index.html
+
+    returnToIndex.addEventListener('mouseover', function () {
+        popUpText.style.visibility = 'visible'
+        popUpText.style.opacity = 1
+    }) // show return-index popup by mouseover
+
+    returnToIndex.addEventListener('mouseout', function () {
+        popUpText.style.visibility = 'hidden'
+        popUpText.style.opacity = 0
+    }) // hide return-index popup by mouseout
+}) 
