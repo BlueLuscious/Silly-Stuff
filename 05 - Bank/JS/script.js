@@ -2,6 +2,7 @@ class Client {
     constructor(firstname, salary) {
         this.firstname = firstname
         this.salary = salary
+        this.amount = 0
     }
 
     depositMoney(money) {
@@ -15,7 +16,7 @@ class Client {
 
     withdrawMoney(money) {
         if (money > 0) {
-            if (cantidad <= this.salary) {
+            if (amount <= this.salary) {
                 this.salary -= money
                 console.log(this.salary)
             } else {
