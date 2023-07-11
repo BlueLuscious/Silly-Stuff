@@ -15,7 +15,7 @@ class Client {
 
     withdrawMoney(money) {
         if (money > 0) {
-            if (cantidad <= this.salario) {
+            if (cantidad <= this.salary) {
                 this.salary -= money
                 console.log(this.salary)
             } else {
